@@ -15,7 +15,6 @@ jobs:
       - name: Fetch all branches
         run: |
           set -euo pipefail
-          export LANG=C.UTF-8
           git fetch --prune --tags origin "+refs/heads/*:refs/remotes/origin/*"
 
       - name: Validate assignment
